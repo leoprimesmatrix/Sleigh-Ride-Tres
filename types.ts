@@ -96,6 +96,8 @@ export interface Particle {
   growth: number; 
 }
 
+export type TerrainStyle = 'SNOW' | 'INDUSTRIAL' | 'FRACTURED' | 'SPIKES' | 'VOID';
+
 export interface LevelConfig {
   name: string;
   description: string;
@@ -104,6 +106,7 @@ export interface LevelConfig {
   spawnRateMultiplier: number;
   weatherIntensity: number;
   glitchIntensity: number; // 0 to 1, how often screen glitches
+  terrainStyle: TerrainStyle;
 }
 
 export interface BackgroundLayer {

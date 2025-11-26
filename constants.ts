@@ -24,47 +24,52 @@ export const LEVELS: LevelConfig[] = [
   {
     name: "Echoes of North Pole", // Act I
     description: "Something feels... off. The snow is falling upwards.",
-    backgroundGradient: ['#1e3a8a', '#172554'], 
+    backgroundGradient: ['#0f172a', '#1e293b'], // Deep Night Blue
     obstacleSpeedMultiplier: 1.0,
     spawnRateMultiplier: 1.0,
     weatherIntensity: 1,
-    glitchIntensity: 0.05
+    glitchIntensity: 0.05,
+    terrainStyle: 'SNOW'
   },
   {
     name: "The Clockwork Sky", // Act II
     description: "Massive gears turn in the heavens. Time is leaking.",
-    backgroundGradient: ['#3f3f46', '#52525b'], // Zinc/Industrial
+    backgroundGradient: ['#3f3f46', '#71717a'], // Zinc/Industrial Grey
     obstacleSpeedMultiplier: 1.1,
     spawnRateMultiplier: 1.2,
     weatherIntensity: 2,
-    glitchIntensity: 0.1
+    glitchIntensity: 0.1,
+    terrainStyle: 'INDUSTRIAL'
   },
   {
     name: "Fractured Reality", // Act III
     description: "The world is breaking apart. Don't touch the voids.",
-    backgroundGradient: ['#2e1065', '#4c1d95'], // Deep Purple
+    backgroundGradient: ['#2e1065', '#000000'], // Deep Void Purple to Black
     obstacleSpeedMultiplier: 1.3,
     spawnRateMultiplier: 1.3,
     weatherIntensity: 4,
-    glitchIntensity: 0.3
+    glitchIntensity: 0.3,
+    terrainStyle: 'FRACTURED'
   },
   {
     name: "The Timekeeper's Fortress", // Act IV
     description: "He is trying to rewrite history. Stop him.",
-    backgroundGradient: ['#000000', '#be123c'], // Red/Black
+    backgroundGradient: ['#450a0a', '#000000'], // Deep Red/Black
     obstacleSpeedMultiplier: 1.6,
     spawnRateMultiplier: 1.5,
     weatherIntensity: 0,
-    glitchIntensity: 0.5
+    glitchIntensity: 0.5,
+    terrainStyle: 'SPIKES'
   },
   {
     name: "The Event Horizon", // Act V
     description: "The end of time.",
-    backgroundGradient: ['#ffffff', '#e2e8f0'], // Blinding White
+    backgroundGradient: ['#ffffff', '#cbd5e1'], // Blinding White
     obstacleSpeedMultiplier: 0, 
     spawnRateMultiplier: 0,
     weatherIntensity: 20,
-    glitchIntensity: 0.8
+    glitchIntensity: 0.8,
+    terrainStyle: 'VOID'
   }
 ];
 
